@@ -3,17 +3,17 @@ services:
     name: Text Leech Bot
     plan: free
     env: docker
-    dockerfilePath: Dockerfile
-    repo: https://github.com/tejp1234/text-leech-bot-for-render
+    dockerfilePath: Dockerfile  # confirm this exists in repo root!
+    repo: https://github.com/AshutoshGoswami24/text-leech-bot
     branch: main
     autoDeploy: false
     envVars:
       - key: BOT_TOKEN
-        value: 7281646935:AAGyP75c8F3lnwV51cuDGqign9jJHFxqKDc
+        value: <YOUR_BOT_TOKEN>
       - key: API_ID
-        value: 27307674
+        value: <YOUR_API_ID>
       - key: API_HASH
-        value: fa234730dc7fbe45cab70e9f242f1a94
+        value: <YOUR_API_HASH>
       - key: WEBHOOK
         value: false
       - key: PORT
