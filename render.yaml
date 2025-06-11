@@ -3,10 +3,10 @@ services:
     name: Text Leech Bot
     plan: free
     env: docker
-    dockerfilePath: Dockerfile  # confirm this exists in repo root!
-    repo: https://github.com/AshutoshGoswami24/text-leech-bot
+    dockerfilePath: Dockerfile
+    repo: https://github.com/tejp1234/text-leech-bot
     branch: main
-    autoDeploy: false
+    autoDeploy: true
     envVars:
       - key: BOT_TOKEN
         value: <YOUR_BOT_TOKEN>
@@ -15,6 +15,6 @@ services:
       - key: API_HASH
         value: <YOUR_API_HASH>
       - key: WEBHOOK
-        value: false
+        value: 'false'
       - key: PORT
-        value: 8000
+        value: '8000'
